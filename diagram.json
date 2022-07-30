@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 57.59, "left": 20.6, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -19.8,
+      "left": 41.99,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -19.68,
+      "left": 58.64,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -20.79,
+      "left": 76.53,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": -20.83,
+      "left": 95.18,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-led", "id": "led5", "top": -21, "left": 114.04, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led6",
+      "top": -20.91,
+      "left": 132.07,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led7",
+      "top": -21.62,
+      "left": 150.41,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led8",
+      "top": -19.36,
+      "left": 23.58,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -43.96, "left": -77.29, "attrs": {} }
+  ],
+  "connections": [
+    [ "led8:C", "nano:GND.2", "black", [ "v26.32", "h104.82" ] ],
+    [ "led1:C", "nano:GND.2", "black", [ "v26.2", "h88.96" ] ],
+    [ "led2:C", "nano:GND.2", "black", [ "v26.36", "h69.76" ] ],
+    [ "led3:C", "nano:GND.2", "black", [ "v27.19", "h52.15" ] ],
+    [ "led4:C", "nano:GND.2", "black", [ "v27.81", "h34.72" ] ],
+    [ "led5:C", "nano:GND.2", "black", [ "v27", "h15.86" ] ],
+    [ "led6:C", "nano:GND.2", "black", [ "v0" ] ],
+    [ "led7:C", "nano:GND.2", "black", [ "v27.99", "h-21.08" ] ],
+    [ "led7:A", "nano:2", "cyan", [ "v33.17", "h-38.13" ] ],
+    [ "led6:A", "nano:3", "yellow", [ "v29.99", "h-29.37" ] ],
+    [ "led5:A", "nano:4", "magenta", [ "v28.06", "h-20.94" ] ],
+    [ "led4:A", "nano:5", "blue", [ "v29.28", "h-11" ] ],
+    [ "led3:A", "nano:6", "gold", [ "v0" ] ],
+    [ "led2:A", "nano:7", "limegreen", [ "v30.72", "h6.23" ] ],
+    [ "led1:A", "nano:8", "cyan", [ "v31.25", "h12.4" ] ],
+    [ "led8:A", "nano:9", "blue", [ "v31.5", "h14.83" ] ],
+    [ "pot1:GND", "nano:GND.2", "black", [ "v11.6", "h194.91", "v26.25" ] ],
+    [ "pot1:SIG", "nano:A1", "magenta", [ "v103.7", "h117.79", "v-0.42" ] ],
+    [ "pot1:VCC", "nano:5V", "red", [ "v105.82", "h181.02" ] ]
+  ]
+}
